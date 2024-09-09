@@ -31,6 +31,7 @@ const CustomizedButton = ({
       disableElevation
       sx={sx}
       startIcon={startIcon}
+      endIcon={endIcon}
       onClick={handleOnClick}
       disableRipple={true}
       {...other}
