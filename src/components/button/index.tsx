@@ -8,7 +8,7 @@ interface Props {
   sx?: SxProps;
   startIcon?: JSX.Element;
   endIcon?: JSX.Element;
-  color?: string;
+  color?: "primary" | "neutral" | "secondary" | "black";
   handleOnClick?: () => void;
 }
 
@@ -19,14 +19,14 @@ const CustomizedButton = ({
   endIcon,
   size,
   sx,
-  color,
+  color = "primary",
   handleOnClick,
   ...other
 }: Props) => {
   return (
     <Button
       variant={variant}
-      color={color ?? "primary"}
+      color={color}
       size={size}
       disableElevation
       sx={sx}
