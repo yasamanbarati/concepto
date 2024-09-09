@@ -4,11 +4,10 @@ import { PaletteColor, PaletteColorOptions } from "@mui/material";
 
 export const palette = {
   neutral: {
-    darker:"#9095AA",//Gray-4
-    dark:"#AEB2C0",//Gray-3
-    main: "#CBCED7",//Gray-2
-    light: "#E9EAEE",//Gray-1
-    lighter:"#fff",
+    darker: "#9095AA", //Gray-4
+    dark: "#AEB2C0", //Gray-3
+    main: "#CBCED7", //Gray-2
+    light: "#E9EAEE", //Gray-1
   },
   primary: {
     main: "#0D6EFD",
@@ -34,12 +33,12 @@ export const palette = {
     light: "#FFF1C9",
   },
   black: {
-    main: "#000",
-    darker:"#2E303B",//Gray-8
-    dark: "#444859",//Gray-7
-    light:"#5B6176",//Gray-6 
-    lighter: "#737993",//Gray-5
+    main: "#2E303B", //Gray-8
+    darker: "#000",
+    dark: "#444859", //Gray-7
+    light: "#5B6176", //Gray-6
   },
+  gray: "#737993", //Gray-5
 };
 declare module "@mui/material/styles" {
   interface Palette {
@@ -50,6 +49,7 @@ declare module "@mui/material/styles" {
     success: PaletteColor;
     warning: PaletteColor;
     black: PaletteColor;
+    gray: string;
   }
   interface PaletteOptions {
     neutral?: PaletteColorOptions;

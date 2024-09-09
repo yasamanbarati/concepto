@@ -7,17 +7,15 @@ export const theme = createTheme({
   spacing: 4, //theme.spacing(2); // `${4 * 2}px` = '8px'
   breakpoints: {
     values: {
-      //به بالا
-      xs: 0,
-      mobileS: 320,
-      mobileM: 375,
-      mobileL: 485,
-      sm: 576,
-      tabletM: 667,
-      tabletL: 768,
-      md: 884,
-      lg: 1200,
-      xl: 1440,
+      xs: 0,  
+      mobileS: 360,  
+      sm: 425,  
+      tabletS: 500,  
+      tabletM: 667,  
+      tablet: 768,  
+      md: 940,  
+      lg: 1024,  
+      xl: 1200, 
     },
   },
   components: {
@@ -29,8 +27,8 @@ export const theme = createTheme({
           fontStyle: "normal",
           lineHeight: "180%",
           textTransform: "lowercase",
-          gap: "10px",
-          borderRadius: "8px",
+          gap: "8px",
+          borderRadius: "12px",
         },
       },
       variants: [
@@ -49,8 +47,9 @@ export const theme = createTheme({
             size: "medium",
           },
           style: {
-            fontSize: "0.875rem",
-            padding: "8px 24px",
+            height: "48px",
+            fontSize: "1rem",
+            padding: "0 16px",
           },
         },
         {
@@ -131,15 +130,14 @@ export const theme = createTheme({
 });
 declare module "@mui/material/styles" {
   interface BreakpointOverrides {
-    xs: true;
-    mobileS: true;
-    mobileM: true;
-    mobileL: true;
-    sm: true;
-    tabletM: true;
-    tabletL: true;
-    md: true;
-    lg: true;
-    xl: true;
+    xs: true;  
+    mobileS: true; 
+    sm: true;  
+    tabletS: true;  
+    tabletM: true; 
+    tablet: true;  
+    md: true;  
+    lg: true;  
+    xl: true; 
   }
 }
