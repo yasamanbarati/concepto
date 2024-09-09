@@ -50,6 +50,12 @@ export const theme = createTheme({
             height: "48px",
             fontSize: "1rem",
             padding: "0 16px",
+            '@media (max-width: 940px)': {
+              fontSize: "0.76rem", 
+              padding: "0 12px", 
+              gap: "4px",
+              borderRadius: "8px",
+            },
           },
         },
         {

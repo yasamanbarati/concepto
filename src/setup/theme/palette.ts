@@ -12,7 +12,6 @@ export const palette = {
   primary: {
     main: "#0D6EFD",
     light: "#013075",
-    lighter: "#79AEFE",
     contrastText: "#fff",
     dark: "#00183B",
   },
@@ -38,6 +37,7 @@ export const palette = {
     dark: "#444859", //Gray-7
     light: "#5B6176", //Gray-6
   },
+  blueLight: "#79AEFE",
   gray: "#737993", //Gray-5
 };
 declare module "@mui/material/styles" {
@@ -50,6 +50,7 @@ declare module "@mui/material/styles" {
     warning: PaletteColor;
     black: PaletteColor;
     gray: string;
+    blueLight: string;
   }
   interface PaletteOptions {
     neutral?: PaletteColorOptions;
