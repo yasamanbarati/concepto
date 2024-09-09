@@ -2,6 +2,8 @@ import { ReduxProvider } from "@/setup/store/redux-provider";
 import { ThemeProvider } from "@/setup/theme/theme-provider";
 
 import "./globals.css";
+import Navbar from "@/components/UI/navbar-section";
+import { Container } from "@mui/material";
 
 export default function RootLayout({
   children,
@@ -12,7 +14,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+            <Container fixed>
+              <Navbar />
+              {children}
+            </Container>
+          </ThemeProvider>
         </ReduxProvider>
       </body>
     </html>
