@@ -1,4 +1,4 @@
-export * from "./mock";
+// export * from "./mock";
 
 export const getHomePageData = async () => {};
 
