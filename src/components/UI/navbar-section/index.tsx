@@ -45,6 +45,9 @@ const MenuBox = styled("div")(({ theme }) => ({
 const NavbarContent = styled(Grid2)(({ theme }) => ({
   "& button.MuiButtonBase-root": {
     width: "auto",
+    "& span": {
+      margin: 0,
+    },
     [theme.breakpoints.down("lg")]: {
       height: "40px",
       fontSize: "0.76rem",
@@ -52,9 +55,6 @@ const NavbarContent = styled(Grid2)(({ theme }) => ({
     [theme.breakpoints.down("tablet")]: {
       minWidth: "32px",
       height: "32px",
-      "& span": {
-        margin: 0,
-      },
     },
   },
 }));
@@ -87,7 +87,7 @@ const Navbar = () => {
             variant="outlined"
             size="medium"
             color="black"
-            text="رایگان شروع کن!"
+            text="ورود/ثبت نام"
             startIcon={<LoginIcon width="10px" height="18px" />}
             sx={{ display: { xs: "none", tablet: "flex" } }}
           />
