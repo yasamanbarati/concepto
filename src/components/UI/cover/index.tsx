@@ -16,6 +16,9 @@ const CoverBox = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   position: "relative",
+  [theme.breakpoints.down("tablet")]: {
+    marginTop: "32px",
+  },
   "&::after": {
     content: `''`,
     position: "absolute",
@@ -72,6 +75,14 @@ const CoverContent = styled("div")(({ theme }) => ({
         minWidth: "125px",
         height: "32px",
       },
+    },
+  },
+  [theme.breakpoints.down("tablet")]: {
+    "& h2": {
+      fontSize: "1.5rem", 
+    },
+    "& p": {
+      fontSize: "0.86rem",
     },
   },
 }));
