@@ -15,7 +15,19 @@ export default function RootLayout({
       <body>
         <ReduxProvider>
           <ThemeProvider>
-            <Container fixed>
+            <Container
+              fixed
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: {
+                  xs: "32px",
+                  tabletS: "60px",
+                  tablet: "96px",
+                  lg: "160px",
+                },
+              }}
+            >
               <Navbar />
               {children}
             </Container>
