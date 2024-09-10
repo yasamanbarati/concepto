@@ -10,7 +10,7 @@ import NavbarMenu from "./navbar_menu_section";
 
 const NavbarSection = styled("div")(({ theme }) => ({
   marginTop: "24px",
-  minHeight: "140px",
+  minHeight: "103px",
   [theme.breakpoints.down("lg")]: {
     "& img": {
       width: "150px",
@@ -43,6 +43,9 @@ const MenuBox = styled("div")(({ theme }) => ({
   },
 }));
 const NavbarContent = styled(Grid2)(({ theme }) => ({
+  [theme.breakpoints.down("tablet")]: {
+    gap: "4px",
+  },
   "& button.MuiButtonBase-root": {
     width: "auto",
     "& span": {
@@ -55,6 +58,7 @@ const NavbarContent = styled(Grid2)(({ theme }) => ({
     [theme.breakpoints.down("tablet")]: {
       minWidth: "32px",
       height: "32px",
+      padding: "4px",
     },
   },
 }));
@@ -63,7 +67,7 @@ const Navbar = () => {
   return (
     <NavbarSection>
       <Grid2 container>
-        <Grid2 container spacing={6} size={7}>
+        <Grid2 container spacing={6} size={{ xs: 9, tablet: 7 }}>
           <MenuBox>
             <NavbarMenu />
           </MenuBox>
@@ -74,7 +78,12 @@ const Navbar = () => {
             }}
           />
         </Grid2>
-        <NavbarContent size={5} container spacing={4} justifyContent="end">
+        <NavbarContent
+          size={{ xs: 3, tablet: 5 }}
+          container
+          spacing={4}
+          justifyContent="end"
+        >
           <CustomizedButton
             variant="contained"
             size="medium"
@@ -95,14 +104,14 @@ const Navbar = () => {
             variant="contained"
             size="medium"
             color="primary"
-            startIcon={<BoltIcon width="10px" height="18px" />}
+            startIcon={<BoltIcon width="8px" height="15px" />}
             sx={{ display: { xs: "flex", tablet: "none" } }}
           />
           <CustomizedButton
             variant="outlined"
             size="medium"
             color="black"
-            startIcon={<LoginIcon width="10px" height="18px" />}
+            startIcon={<LoginIcon width="16px" height="15px" />}
             sx={{ display: { xs: "flex", tablet: "none" } }}
           />
         </NavbarContent>
