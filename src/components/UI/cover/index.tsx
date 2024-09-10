@@ -11,14 +11,10 @@ interface InvestmentInfoProps {
 }
 
 const CoverBox = styled("div")(({ theme }) => ({
-  marginTop: "95px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   position: "relative",
-  [theme.breakpoints.down("tablet")]: {
-    marginTop: "32px",
-  },
   "&::after": {
     content: `''`,
     position: "absolute",
@@ -79,7 +75,7 @@ const CoverContent = styled("div")(({ theme }) => ({
   },
   [theme.breakpoints.down("tablet")]: {
     "& h2": {
-      fontSize: "1.5rem", 
+      fontSize: "1.5rem",
     },
     "& p": {
       fontSize: "0.86rem",
@@ -180,6 +176,17 @@ const InvestmentBox = styled("div")(({ theme }) => ({
     alignItems: "flex-start",
     gap: "12px",
     marginTop: "30px",
+    "& p": {
+      fontSize: "2rem!important",
+      "&::before": {
+        width: "50px",
+        height: "50px",
+        right: "-30px",
+      },
+    },
+    "& span": {
+      fontSize: "1rem!important",
+    },
   },
 }));
 
