@@ -27,3 +27,8 @@ export const navbarLinks: navbarLinksProps[] = [
     url: "/",
   },
 ];
+export const MapRoad: string[] = [
+  "شرکت‌های مورد علاقت رو پیدا کن",
+  "کسب و کارهای مناسب رو پیدا کن",
+  "با کسب و کارها ارتباط بگیر",
+];
