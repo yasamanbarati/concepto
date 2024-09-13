@@ -8,7 +8,7 @@ interface Props {
   sx?: SxProps;
   startIcon?: JSX.Element;
   endIcon?: JSX.Element;
-  color?: "primary" | "neutral" | "secondary" | "black";
+  color?: "primary" | "neutral" | "secondary" | "black" | "white";
   handleOnClick?: () => void;
 }
 

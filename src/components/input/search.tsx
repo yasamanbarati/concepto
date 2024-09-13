@@ -3,7 +3,7 @@ import { IconButton, InputBase, styled } from "@mui/material";
 import { SearchIcon } from "@/components/icons";
 
 const InputSection = styled("div")(({ theme }) => ({
-  position: "relative",  [theme.breakpoints.down("lg")]: {
+  position: "relative",  [theme.breakpoints.down("laptop")]: {
     width: "320px",
   },
   [theme.breakpoints.down("md")]: {
