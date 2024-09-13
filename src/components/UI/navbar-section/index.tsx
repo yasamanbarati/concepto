@@ -11,7 +11,7 @@ import NavbarMenu from "./navbar_menu_section";
 const NavbarSection = styled("div")(({ theme }) => ({
   marginTop: "24px",
   minHeight: "103px",
-  [theme.breakpoints.down("lg")]: {
+  [theme.breakpoints.down("laptop")]: {
     "& img": {
       width: "150px",
       height: "20px",
@@ -51,7 +51,7 @@ const NavbarContent = styled(Grid2)(({ theme }) => ({
     "& span": {
       margin: 0,
     },
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.down("laptop")]: {
       height: "40px",
       fontSize: "0.76rem",
     },
