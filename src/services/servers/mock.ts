@@ -1,4 +1,9 @@
-import { navbarLinksProps } from "./type";
+import {
+  CategoriesProps,
+  CompaniesProps,
+  FooterLinksProps,
+  navbarLinksProps,
+} from "./type";
 
 export const navbarLinks: navbarLinksProps[] = [
   {
@@ -27,80 +32,262 @@ export const navbarLinks: navbarLinksProps[] = [
     url: "/",
   },
 ];
+export const FooterLinks: FooterLinksProps[] = [
+  {
+    id: 1,
+    title: "کانسپتو",
+    links: [
+      {
+        id: 12,
+        name: "درباره ما",
+        path: "./",
+      },
+      {
+        id: 13,
+        name: "تماس با ما",
+        path: "./",
+      },
+      {
+        id: 14,
+        name: "اتاق خبر",
+        path: "./",
+      },
+      {
+        id: 15,
+        name: "قوانین و مقررات",
+        path: "./",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "خدمات مشتریان",
+    links: [
+      {
+        id: 21,
+        name: "حساب کاربری",
+        path: "./",
+      },
+      {
+        id: 22,
+        name: "سوالات متداول",
+        path: "./",
+      },
+      {
+        id: 23,
+        name: "راهنمای کار با سایت",
+        path: "./",
+      },
+      {
+        id: 24,
+        name: "گزارش باگ",
+        path: "./",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "پیشنهاد کانسپتو",
+    links: [
+      {
+        id: 31,
+        name: "لیست استارتاپ های ایرانی",
+        path: "./",
+      },
+      {
+        id: 32,
+        name: "ارزش گزاری استارتاپ",
+        path: "./",
+      },
+      {
+        id: 33,
+        name: "ایده های استارتاپی",
+        path: "./",
+      },
+      {
+        id: 34,
+        name: "محبوب ترین شرکت ها",
+        path: "./",
+      },
+    ],
+  },
+];
 export const MapRoad: string[] = [
   "شرکت‌های مورد علاقت رو پیدا کن",
   "کسب و کارهای مناسب رو پیدا کن",
   "با کسب و کارها ارتباط بگیر",
 ];
-export const Categories =[
+export const Categories: CategoriesProps[] = [
   {
     id: 0,
-    image:'/images/Button.png',
-    name: 'هوش مصنوعی',
+    image: "/images/Button.png",
+    name: "هوش مصنوعی",
   },
   {
     id: 1,
-    image:'/images/Button (1).png',
-    name: 'برنامه نویسی',
+    image: "/images/Button (1).png",
+    name: "برنامه نویسی",
   },
   {
     id: 2,
-    image:'/images/Button (2).png',
-    name: 'ارز دیجیتال',
+    image: "/images/Button (2).png",
+    name: "ارز دیجیتال",
   },
   {
     id: 3,
-    image:'/images/Switch.png',
-    name: 'حسابداری',
+    image: "/images/Switch.png",
+    name: "حسابداری",
   },
   {
     id: 4,
-    image:'/images/Button (3).png',
-    name: 'گرافیک',
+    image: "/images/Button (3).png",
+    name: "گرافیک",
   },
   {
     id: 5,
-    image:'/images/Switch (1).png',
-    name: 'رسانه‌ها',
+    image: "/images/Switch (1).png",
+    name: "رسانه‌ها",
   },
   {
     id: 6,
-    image:'/images/Switch (2).png',
-    name: 'هوافضا',
+    image: "/images/Switch (2).png",
+    name: "هوافضا",
   },
   {
     id: 7,
-    image:'/images/Switch (3).png',
-    name: 'پزشکی',
+    image: "/images/Switch (3).png",
+    name: "پزشکی",
   },
   {
     id: 8,
-    image:'/images/Switch (4).png',
-    name: 'تجارت الکترونیک',
+    image: "/images/Switch (4).png",
+    name: "تجارت الکترونیک",
   },
   {
     id: 9,
-    image:'/images/Vertical container.png',
-    name: 'علمی',
+    image: "/images/Vertical container.png",
+    name: "علمی",
   },
   {
     id: 10,
-    image:'/images/Switch (5).png',
-    name: 'موسیقی',
+    image: "/images/Switch (5).png",
+    name: "موسیقی",
   },
   {
     id: 11,
-    image:'/images/Switch (6).png',
-    name: 'بیوتکنولوژی',
+    image: "/images/Switch (6).png",
+    name: "بیوتکنولوژی",
   },
   {
     id: 12,
-    image:'/images/Button (4).png',
-    name: 'فیلم و سینما',
+    image: "/images/Button (4).png",
+    name: "فیلم و سینما",
   },
   {
     id: 13,
-    image:'/images/Slider.png',
-    name: 'حمل و نقل',
+    image: "/images/Slider.png",
+    name: "حمل و نقل",
   },
-]
+];
+export const Companies: CompaniesProps[] = [
+  {
+    id: 11,
+    logo: "/images/Alibaba.png",
+    company_name: "علی بابا",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 234,
+    new_investors: 46750,
+    location: "تهران، ایران",
+    rating: 5,
+  },
+  {
+    id: 12,
+    logo: "/images/Farbi.png",
+    company_name: "کارگزاری فارابی",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 39,
+    new_investors: 29110,
+    location: "تهران، ایران",
+    rating: 5,
+  },
+  {
+    id: 13,
+    logo: "/images/Digikala.png",
+    company_name: "دیجی کالا",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 43,
+    new_investors: 25210,
+    location: "تهران، ایران",
+    rating: 4,
+  },
+  {
+    id: 14,
+    logo: "/images/Snapp.png",
+    company_name: "اسنپ",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 39,
+    new_investors: 21946,
+    location: "تهران، ایران",
+    rating: 5,
+  },
+  {
+    id: 15,
+    logo: "/images/Blu.png",
+    company_name: "بلوبانک",
+    business_type: "حسابداری",
+    capital_investors: 234,
+    new_investors: 46750,
+    location: "تهران، ایران",
+    rating: 4.5,
+  },
+  {
+    id: 16,
+    logo: "/images/SnappFood.png",
+    company_name: "اسنپ فود",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 39,
+    new_investors: 29110,
+    location: "تهران، ایران",
+    rating: 3.8,
+  },
+  {
+    id: 17,
+    logo: "/images/Tapsi.png",
+    company_name: "تپسی",
+    business_type: "حمل و نقل",
+    capital_investors: 43,
+    new_investors: 25210,
+    location: "تهران، ایران",
+    rating: 4,
+  },
+  {
+    id: 18,
+    logo: "/images/Jabinja.png",
+    company_name: "جابینجا",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 39,
+    new_investors: 21946,
+    location: "تهران، ایران",
+    rating: 3.5,
+  },
+  {
+    id: 19,
+    logo: "/images/Iransell.png",
+    company_name: "ایرانسل",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 39,
+    new_investors: 21946,
+    location: "تهران، ایران",
+    rating: 4,
+  },
+  {
+    id: 20,
+    logo: "/images/Divar.png",
+    company_name: "دیوار",
+    business_type: "تجارت الکترونیک",
+    capital_investors: 39,
+    new_investors: 21946,
+    location: "تهران، ایران",
+    rating: 5,
+  },
+];
