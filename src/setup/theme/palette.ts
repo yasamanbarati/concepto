@@ -43,6 +43,7 @@ export const palette = {
     dark: "#287EFD",
   },
   gray: "#737993", //Gray-5
+  white: "#fff",
 };
 declare module "@mui/material/styles" {
   interface Palette {
@@ -55,6 +56,7 @@ declare module "@mui/material/styles" {
     black: PaletteColor;
     blue: PaletteColor;
     gray: string;
+    white: string;
   }
   interface PaletteOptions {
     neutral?: PaletteColorOptions;
