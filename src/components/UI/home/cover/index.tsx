@@ -213,14 +213,14 @@ const CoverSection = () => {
             size="medium"
             color="primary"
             text="رایگان شروع کن!"
-            startIcon={<BoltIcon width="10px" height="18px" />}
+            startIcon={<BoltIcon sx={{ width: '24px!important', height: '24px!important' }}  />}
           />
           <CustomizedButton
             variant="outlined"
             size="medium"
             color="black"
             text="درباره کانسپتو"
-            endIcon={<ChevronLeft width="10px" height="18px" />}
+            endIcon={<ChevronLeft sx={{ width: '24px!important', height: '24px!important' }}  />}
           />
         </div>
       </CoverContent>

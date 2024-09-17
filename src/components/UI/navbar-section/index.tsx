@@ -89,7 +89,11 @@ const Navbar = () => {
             size="medium"
             color="primary"
             text="رایگان شروع کن!"
-            startIcon={<BoltIcon width="10px" height="18px" />}
+            startIcon={
+              <BoltIcon
+                sx={{ width: "24px!important", height: "24px!important" }}
+              />
+            }
             sx={{ display: { xs: "none", tablet: "flex" } }}
           />
           <CustomizedButton
@@ -97,21 +101,33 @@ const Navbar = () => {
             size="medium"
             color="black"
             text="ورود/ثبت نام"
-            startIcon={<LoginIcon width="10px" height="18px" />}
+            startIcon={
+              <LoginIcon
+                sx={{ width: "24px!important", height: "24px!important" }}
+              />
+            }
             sx={{ display: { xs: "none", tablet: "flex" } }}
           />
           <CustomizedButton
             variant="contained"
             size="medium"
             color="primary"
-            startIcon={<BoltIcon width="8px" height="15px" />}
+            startIcon={
+              <BoltIcon
+                sx={{ width: "18px!important", height: "18x!important" }}
+              />
+            }
             sx={{ display: { xs: "flex", tablet: "none" } }}
           />
           <CustomizedButton
             variant="outlined"
             size="medium"
             color="black"
-            startIcon={<LoginIcon width="16px" height="15px" />}
+            startIcon={
+              <LoginIcon
+                sx={{ width: "18px!important", height: "18x!important" }}
+              />
+            }
             sx={{ display: { xs: "flex", tablet: "none" } }}
           />
         </NavbarContent>
