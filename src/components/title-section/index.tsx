@@ -1,10 +1,14 @@
 import { ReactNode } from "react";
 
 import { Typography, styled } from "@mui/material";
+import CustomizedButton from "../button";
+import { ChevronLeft } from "../icons";
 
 interface Props {
   title: string;
   children: React.ReactNode;
+  textColor: "gray" | "white";
+  flag: boolean;
 }
 
 const TitlesSectionDiv = styled("div")(({ theme }) => ({
@@ -23,20 +27,28 @@ const TitlesSectionDiv = styled("div")(({ theme }) => ({
   },
 }));
 
-const TitleSection = ({ title, children }: Props) => {
+const TitleSection = ({ title, children, textColor, flag }: Props) => {
   return (
     <div>
       <TitlesSectionDiv>
         <Typography
           component="h3"
           variant="h5"
-          color="gray"
+          color={textColor}
           whiteSpace="nowrap"
           mx={1}
         >
           {title}
         </Typography>
         <hr />
+        {flag === true && (
+          <CustomizedButton
+            size="medium"
+            variant="text"
+            endIcon={<ChevronLeft width={7} height={12} />}
+            text="مشاهده همه"
+          />
+        )}
       </TitlesSectionDiv>
       {children}
     </div>
