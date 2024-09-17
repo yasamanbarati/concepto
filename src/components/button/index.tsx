@@ -10,6 +10,7 @@ interface Props {
   endIcon?: JSX.Element;
   color?: "primary" | "neutral" | "secondary" | "black" | "white";
   handleOnClick?: () => void;
+  disabled?: true | false;
 }
 
 const CustomizedButton = ({
@@ -21,6 +22,7 @@ const CustomizedButton = ({
   sx,
   color = "primary",
   handleOnClick,
+  disabled,
   ...other
 }: Props) => {
   return (
@@ -34,6 +36,7 @@ const CustomizedButton = ({
       endIcon={endIcon}
       onClick={handleOnClick}
       disableRipple={true}
+      disabled={disabled}
       {...other}
     >
       {text}
