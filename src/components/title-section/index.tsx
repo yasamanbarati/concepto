@@ -13,23 +13,33 @@ interface Props {
 
 const TitlesSectionDiv = styled("div")(({ theme }) => ({
   display: "flex",
-  justifyContent: "flex-start",
+  justifyContent: "space-between",
   alignItems: "center",
-  marginBottom: "24px",
-  "& svg": {
-    width: "50px",
-    height: "40px",
-  },
+  marginBottom: "43px",
+  gap: "12px",
   "& hr": {
-    width: "100%",
-    color: theme.palette.neutral.main,
-    marginRight: "21px",
+    color: theme.palette.white,
+  },
+  "& .MuiButtonBase-root": {
+    gap: 0,
+    padding: 0,
+    color: theme.palette.white,
+    "& svg": {
+      width: "32px",
+      height: "32px",
+      "& path": {
+        fill: theme.palette.white,
+      },
+    },
+  },
+  [theme.breakpoints.down("tablet")]: {
+    marginBottom: "35px",
   },
 }));
 
 const TitleSection = ({ title, children, textColor, flag }: Props) => {
   return (
-    <div>
+    <>
       <TitlesSectionDiv>
         <Typography
           component="h3"
@@ -40,18 +50,18 @@ const TitleSection = ({ title, children, textColor, flag }: Props) => {
         >
           {title}
         </Typography>
-        <hr />
+        <hr style={{ width: flag ? "0%" : "100%" }} />
         {flag === true && (
           <CustomizedButton
             size="medium"
             variant="text"
-            endIcon={<ChevronLeft width={7} height={12} />}
+            endIcon={<ChevronLeft />}
             text="مشاهده همه"
           />
         )}
       </TitlesSectionDiv>
       {children}
-    </div>
+    </>
   );
 };
 
