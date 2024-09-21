@@ -13,10 +13,13 @@ const PaperForm = styled(Paper)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   width: "100%",
-  padding: "12px",
+  padding: "0 6px",
   height: "58px",
   borderRadius: "50px",
-  marginBottom: "25px",
+  [theme.breakpoints.down("md")]: {
+    height: "40px",
+    borderRadius: "8px",
+  },
   "& .MuiButtonBase-root": {
     borderRadius: "50px!important",
     color: theme.palette.white,
@@ -25,8 +28,10 @@ const PaperForm = styled(Paper)(({ theme }) => ({
     height: "40px",
     padding: "6px 12px",
     [theme.breakpoints.down("md")]: {
-      width: "93px",
+      width: "30%",
       height: "32px",
+      fontSize: "0.875rem", 
+      borderRadius: "8px!important",
     },
     "& span, svg": {
       marginLeft: 0,
@@ -40,7 +45,7 @@ const PaperForm = styled(Paper)(({ theme }) => ({
 const InputBase = styled(Input)(() => ({
   width: "100%",
   height: "40px",
-  padding: "0 12px",
+  padding: "12px",
   fontSize: "1rem",
   lineHeight: "140%",
   fontWeight: "500",
