@@ -25,8 +25,8 @@ const NavbarMenu = () => {
         sx={{
           ...(open && { display: "flex" }),
           position: "absolute",
-          right: "-10px",
-          top: "-4px",
+          right: "-3px",
+          top: "-6px",
           MinHeight: "65px",
           justifyContent: "flex-start",
           alignItems: "center",

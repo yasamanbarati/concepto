@@ -14,7 +14,12 @@ const CategoryImage = styled(Image)(({ theme }) => ({
 const CategorySection = () => {
   return (
     <TitleSection title="دسته بندی ها" flag={false} textColor="gray">
-      <Grid2 container spacing={12}>
+      <Grid2
+        container
+        spacing={12}
+        justifyContent="center"
+        mb={{ xs: 21, md: 40 }}
+      >
         {Categories.map((item, index) => {
           return (
             <Grid2

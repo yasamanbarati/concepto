@@ -4,10 +4,15 @@ import { Grid2, styled, Typography } from "@mui/material";
 import { MapRoad } from "@/services/servers/mock";
 import Image from "next/image";
 
-const MapRoadDiv = styled(Grid2)(() => ({
+const MapRoadDiv = styled(Grid2)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  marginBottom: "160px",
+  [theme.breakpoints.down("tablet")]: {
+    paddingTop: "32px",
+    marginBottom: "62px",
+  },
 }));
 const MapRoadCard = styled(Grid2)(({ theme }) => ({
   textAlign: "center",

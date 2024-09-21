@@ -15,6 +15,12 @@ const CoverBox = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   position: "relative",
+  paddingTop: "96px",
+  marginBottom: "160px",
+  [theme.breakpoints.down("tablet")]: {
+    paddingTop: "32px",
+    marginBottom: "62px",
+  },
   "&::after": {
     content: `''`,
     position: "absolute",
@@ -125,7 +131,6 @@ const CoverImagesBox = styled("div")(({ theme }) => ({
       right: 0,
       width: "400px",
       height: "360px",
-      //   clipPath: "inset(0 0 200px 0)",
     },
   },
 }));
@@ -213,14 +218,22 @@ const CoverSection = () => {
             size="medium"
             color="primary"
             text="رایگان شروع کن!"
-            startIcon={<BoltIcon sx={{ width: '24px!important', height: '24px!important' }}  />}
+            startIcon={
+              <BoltIcon
+                sx={{ width: "24px!important", height: "24px!important" }}
+              />
+            }
           />
           <CustomizedButton
             variant="outlined"
             size="medium"
             color="black"
             text="درباره کانسپتو"
-            endIcon={<ChevronLeft sx={{ width: '24px!important', height: '24px!important' }}  />}
+            endIcon={
+              <ChevronLeft
+                sx={{ width: "24px!important", height: "24px!important" }}
+              />
+            }
           />
         </div>
       </CoverContent>
