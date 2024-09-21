@@ -1,8 +1,14 @@
-import { SvgIcon, SvgIconProps } from '@mui/material'
+import { SvgIcon, SvgIconProps } from "@mui/material";
 
 export function TwitterIcon(props: SvgIconProps) {
   return (
-    <SvgIcon width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <SvgIcon
+      width="24"
+      height="24"
+      viewBox="0 0 24 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M21.057 7.18c.01.212.01.414.01.625.009 6.403-4.696 13.795-13.3 13.795-2.537 0-5.028-.758-7.167-2.18a9.174 9.174 0 0 0 6.918-2.016c-2-.038-3.76-1.391-4.371-3.369a4.366 4.366 0 0 0 2.111-.086c-2.176-.442-3.741-2.429-3.75-4.743V9.15c.648.374 1.38.585 2.12.605C1.582 8.333.943 5.5 2.184 3.284c2.38 3.033 5.88 4.866 9.64 5.068a4.98 4.98 0 0 1 1.352-4.637c1.88-1.833 4.844-1.737 6.622.211a9.095 9.095 0 0 0 2.972-1.18 4.855 4.855 0 0 1-2.055 2.678 9.362 9.362 0 0 0 2.685-.758 9.768 9.768 0 0 1-2.343 2.515Z"
         fill="#fff"
