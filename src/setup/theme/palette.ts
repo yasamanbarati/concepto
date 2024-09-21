@@ -4,7 +4,6 @@ import { PaletteColor, PaletteColorOptions } from "@mui/material";
 
 export const palette = {
   neutral: {
-    darker: "#9095AA", //Gray-4
     dark: "#AEB2C0", //Gray-3
     main: "#CBCED7", //Gray-2
     light: "#E9EAEE", //Gray-1
@@ -44,6 +43,7 @@ export const palette = {
   },
   gray: "#737993", //Gray-5
   white: "#fff",
+  gray_4: "#9095AA", //Gray-4
 };
 declare module "@mui/material/styles" {
   interface Palette {
@@ -57,6 +57,7 @@ declare module "@mui/material/styles" {
     blue: PaletteColor;
     gray: string;
     white: string;
+    gray_4: string;
   }
   interface PaletteOptions {
     neutral?: PaletteColorOptions;

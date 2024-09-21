@@ -29,6 +29,7 @@ export const theme = createTheme({
           textTransform: "lowercase",
           gap: "8px",
           borderRadius: "12px",
+          textWrap: "nowrap",
         },
       },
       variants: [
@@ -94,6 +95,10 @@ export const theme = createTheme({
       fontSize: "1.25rem", //20
       lineHeight: "140%",
       fontWeight: "700",
+      "@media (max-width: 667px)": {
+        fontSize: "1rem", //14
+        lineHeight: "180%",
+      },
     },
     h6: {
       fontSize: "1.125rem", //18
