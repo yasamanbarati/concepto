@@ -1,6 +1,7 @@
-import CategorySection from "@/components/UI/category-section";
-import CoverSection from "@/components/UI/cover";
-import MapRoadSection from "@/components/UI/map-road-section";
+import CoverSection from "@/components/UI/home/cover";
+import MapRoadSection from "@/components/UI/home/map-road-section";
+import CategorySection from "@/components/UI/home/category-section";
+import PopularCompaniesSection from "@/components/UI/home/popular-companies-section";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <CoverSection />
       <MapRoadSection />
       <CategorySection />
+      <PopularCompaniesSection />
     </>
   );
 }
