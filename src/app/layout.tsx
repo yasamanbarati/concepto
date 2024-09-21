@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/setup/theme/theme-provider";
 import "./globals.css";
 import Navbar from "@/components/UI/navbar-section";
 import { Container } from "@mui/material";
+import Footer from "@/components/UI/footer-section";
 
 export default function RootLayout({
   children,
@@ -20,17 +21,12 @@ export default function RootLayout({
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: {
-                  xs: "32px",
-                  tabletS: "60px",
-                  tablet: "96px",
-                  lg: "160px",
-                },
               }}
             >
               <Navbar />
               {children}
             </Container>
+            <Footer />
           </ThemeProvider>
         </ReduxProvider>
       </body>
