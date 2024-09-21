@@ -10,6 +10,17 @@ const FooterSection = styled("div")(({ theme }) => ({
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   minHeight: "487px",
+  position: "relative",
+  paddingTop: "60px",
+  "::before": {
+    content: `""`,
+    position: "absolute",
+    width: "100%",
+    height: "100px",
+    backgroundColor: theme.palette.white,
+    borderRadius: "0 0 50% 50%",
+    top: "-40px",
+  },
 }));
 
 const Footer = () => {

@@ -31,6 +31,9 @@ const LinkGrid = styled(Grid2)(({ theme }) => ({
   },
 }));
 const FooterInfo = styled("div")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    marginTop: "32px",
+  },
   "& p": {
     color: theme.palette.white,
     fontWeight: "500",
@@ -64,13 +67,22 @@ const FooterContent = styled(Grid2)(({ theme }) => ({
     lineHeight: "140%",
     fontWeight: "500",
   },
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    marginTop: "32px",
+  },
 }));
 
 const FooterMainSection = () => {
   return (
     <Container fixed>
       <Grid2 container spacing={{ md: 16, laptop: 20 }} py={{ md: 18 }}>
-        <Grid2 container size={{ xs: 12, md: 7 }}>
+        <Grid2
+          container
+          size={{ xs: 12, md: 7 }}
+          justifyContent={{ xs: "space-between", md: "flex-start" }}
+          mt={{ xs: 15, md: 0 }}
+        >
           {FooterLinks.map((item, index) => {
             return (
               <LinkGrid size={{ md: 4 }}>

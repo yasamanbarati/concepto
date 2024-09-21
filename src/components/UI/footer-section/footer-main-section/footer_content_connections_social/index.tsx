@@ -22,12 +22,14 @@ const SocialIconsBox = styled(Box)(({ theme }) => ({
       boxShadow: `0px 4px 6px ${theme.palette.secondary.light}`,
     },
   },
+  [theme.breakpoints.down("md")]: {
+    gap: "24px",
+    marginBottom: "32px",
+  },
 }));
 export const FooterContentConnectionsSocialIcons = () => {
   return (
-    <SocialIconsBox
-      sx={{ justifyContent: { xs: "space-between", md: "flex-start" } }}
-    >
+    <SocialIconsBox sx={{ justifyContent: "flex-start" }}>
       <TwitterIcon />
       <InstagramIcon />
       <LinkedinIcon />
