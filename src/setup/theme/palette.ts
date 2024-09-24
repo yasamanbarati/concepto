@@ -32,7 +32,6 @@ export const palette = {
   },
   black: {
     main: "#2E303B", //Gray-8
-    darker: "#000",
     dark: "#444859", //Gray-7
     light: "#5B6176", //Gray-6
   },
@@ -42,8 +41,9 @@ export const palette = {
     dark: "#287EFD",
   },
   gray: "#737993", //Gray-5
-  white: "#fff",
   gray_4: "#9095AA", //Gray-4
+  white: "#fff",
+  black_dark: "#000",
 };
 declare module "@mui/material/styles" {
   interface Palette {
@@ -57,6 +57,7 @@ declare module "@mui/material/styles" {
     blue: PaletteColor;
     gray: string;
     white: string;
+    black_dark: string;
     gray_4: string;
   }
   interface PaletteOptions {
@@ -79,5 +80,7 @@ declare module "@mui/material/Button" {
     success: true;
     black: true;
     blue: true;
+    white: true;
+    gray: true;
   }
 }
