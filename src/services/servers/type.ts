@@ -27,4 +27,22 @@ export interface CompaniesProps {
   location: string;
   rating: number;
   description: string;
+  job_opportunity?: number;
+}
+export interface LatestNewsProps {
+  id: number;
+  category: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  date: string;
+  author: string;
+}
+export interface RecentEventsProps {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  location: string;
+  imageUrl: string;
 }
