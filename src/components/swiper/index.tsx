@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { styled } from "@mui/material";
 
 interface Props {
   children: React.ReactNode;
@@ -12,6 +13,31 @@ interface Props {
   navigationFlag: boolean;
 }
 
+const SwiperSlide = styled(Swiper)(({ theme }) => ({
+  width: "-webkit-fill-available",
+  marginBottom: "160px",
+  [theme.breakpoints.down("md")]: {
+    marginBottom: "96px",
+  },
+  "& .swiper-button-prev, .swiper-button-next": {
+    width: "50px",
+    height: "50px",
+    borderRadius: "50%",
+    backgroundColor: theme.palette.white,
+    boxShadow: `0 5px 50px 0 ${theme.palette.black_dark + "5"}`,
+    "&::after": {
+      fontSize: "20px",
+      color: theme.palette.black_dark,
+    },
+  },
+  "& .swiper-button-prev": {
+    right: "-20px!important",
+  },
+  "& .swiper-button-next": {
+    left: "-20px!important",
+  },
+}));
+
 const SwiperSection = ({
   children,
   spaceBetween,
@@ -19,7 +45,7 @@ const SwiperSection = ({
   navigationFlag,
 }: Props) => {
   return (
-    <Swiper
+    <SwiperSlide
       spaceBetween={spaceBetween}
       navigation={navigationFlag}
       loop={true}
@@ -28,7 +54,7 @@ const SwiperSection = ({
       className="swiper-section"
     >
       {children}
-    </Swiper>
+    </SwiperSlide>
   );
 };
 
