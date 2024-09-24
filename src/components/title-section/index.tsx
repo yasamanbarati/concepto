@@ -50,7 +50,7 @@ const TitleSection = ({ title, children, textColor, flag }: Props) => {
         >
           {title}
         </Typography>
-        <hr style={{ width: flag ? "0%" : "100%" }} />
+        <hr style={{ width: flag === false ? "100%" : "0%" }} />
         {flag === true && (
           <CustomizedButton
             size="medium"
