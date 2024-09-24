@@ -252,11 +252,11 @@ const PopularCompaniesSection = () => {
                     <div>
                       <div className="information-invertors">
                         <h2>مخاطبین جدید</h2>
-                        <span>{item.new_investors}</span>
+                        <span>{item.new_investors?.toLocaleString("fa-IR")}</span>
                       </div>
                       <div className="information-invertors">
                         <h2>سرمایه گذاران جدید</h2>
-                        <span>{item.capital_investors}</span>
+                        <span>{item.capital_investors?.toLocaleString("fa-IR")}</span>
                       </div>
                     </div>
                     <p>{item.description}</p>
@@ -266,7 +266,7 @@ const PopularCompaniesSection = () => {
                         <LocationIcon />
                       </div>
                       <div>
-                        <span>{item.rating}</span>
+                        <span>{item.rating?.toLocaleString("fa-IR")}</span>
                         <StarIcon />
                       </div>
                     </div>
