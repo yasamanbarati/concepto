@@ -8,7 +8,7 @@ interface Props {
   sx?: SxProps;
   startIcon?: JSX.Element;
   endIcon?: JSX.Element;
-  color?: "primary" | "neutral" | "secondary" | "black" | "white";
+  color?: "primary" | "neutral" | "secondary" | "black" | "white" | "gray";
   handleOnClick?: () => void;
   disabled?: true | false;
 }
@@ -20,7 +20,7 @@ const CustomizedButton = ({
   endIcon,
   size,
   sx,
-  color = "primary",
+  color,
   handleOnClick,
   disabled,
   ...other
