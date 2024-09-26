@@ -48,12 +48,12 @@ body {
 }
 
 body {
-  font-family: IRANSans !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
+  font-family: "IRANSans" !important;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
