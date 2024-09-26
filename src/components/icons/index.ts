@@ -13,3 +13,5 @@ export { PhoneIcon } from "./phone_icon";
 export { SearchIcon } from "./search_Icon";
 export { TwitterIcon } from "./twitter_icon";
 export { StarIcon } from "./star_icon";
+export { HomeIcon } from "./home-icon";
+export { EmailIcon } from "./email-icon";
