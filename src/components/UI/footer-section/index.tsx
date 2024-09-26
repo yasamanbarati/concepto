@@ -11,6 +11,7 @@ const FooterSection = styled("div")(({ theme }) => ({
   backgroundSize: "cover",
   minHeight: "487px",
   position: "relative",
+  marginTop: "160px",
   paddingTop: "60px",
   "::before": {
     content: `""`,
@@ -20,6 +21,9 @@ const FooterSection = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.white,
     borderRadius: "0 0 50% 50%",
     top: "-40px",
+  },
+  [theme.breakpoints.down("tablet")]: {
+    marginTop: "80px",
   },
 }));
 
