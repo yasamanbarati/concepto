@@ -21,17 +21,17 @@ export const navbarLinks: navbarLinksProps[] = [
   {
     id: "4",
     name: "اخبار و رویدادها",
-    url: "/",
+    url: "/news-events",
   },
   {
     id: "5",
     name: "درباره ما",
-    url: "/",
+    url: "/about-us",
   },
   {
     id: "6",
     name: "تماس با ما",
-    url: "/",
+    url: "/contact-us",
   },
 ];
 export const FooterLinks: FooterLinksProps[] = [
@@ -42,12 +42,12 @@ export const FooterLinks: FooterLinksProps[] = [
       {
         id: 12,
         name: "درباره ما",
-        path: "./",
+        path: "/about-us",
       },
       {
         id: 13,
         name: "تماس با ما",
-        path: "./",
+        path: "/contact-us",
       },
       {
         id: 14,
