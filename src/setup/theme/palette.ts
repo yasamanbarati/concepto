@@ -4,16 +4,13 @@ import { PaletteColor, PaletteColorOptions } from "@mui/material";
 
 export const palette = {
   neutral: {
-    darker:"#9095AA",//Gray-4
-    dark:"#AEB2C0",//Gray-3
-    main: "#CBCED7",//Gray-2
-    light: "#E9EAEE",//Gray-1
-    lighter:"#fff",
+    dark: "#AEB2C0", //Gray-3
+    main: "#CBCED7", //Gray-2
+    light: "#E9EAEE", //Gray-1
   },
   primary: {
     main: "#0D6EFD",
     light: "#013075",
-    lighter: "#79AEFE",
     contrastText: "#fff",
     dark: "#00183B",
   },
@@ -34,12 +31,19 @@ export const palette = {
     light: "#FFF1C9",
   },
   black: {
-    main: "#000",
-    darker:"#2E303B",//Gray-8
-    dark: "#444859",//Gray-7
-    light:"#5B6176",//Gray-6 
-    lighter: "#737993",//Gray-5
+    main: "#2E303B", //Gray-8
+    dark: "#444859", //Gray-7
+    light: "#5B6176", //Gray-6
   },
+  blue: {
+    light: "#AECFFE",
+    main: "#79AEFE",
+    dark: "#287EFD",
+  },
+  gray: "#737993", //Gray-5
+  gray_4: "#9095AA", //Gray-4
+  white: "#fff",
+  black_dark: "#000",
 };
 declare module "@mui/material/styles" {
   interface Palette {
@@ -50,6 +54,11 @@ declare module "@mui/material/styles" {
     success: PaletteColor;
     warning: PaletteColor;
     black: PaletteColor;
+    blue: PaletteColor;
+    gray: string;
+    white: string;
+    black_dark: string;
+    gray_4: string;
   }
   interface PaletteOptions {
     neutral?: PaletteColorOptions;
@@ -59,6 +68,7 @@ declare module "@mui/material/styles" {
     success?: PaletteColorOptions;
     warning?: PaletteColorOptions;
     black?: PaletteColorOptions;
+    blue?: PaletteColorOptions;
   }
 }
 declare module "@mui/material/Button" {
@@ -69,5 +79,8 @@ declare module "@mui/material/Button" {
     error: true;
     success: true;
     black: true;
+    blue: true;
+    white: true;
+    gray: true;
   }
 }

@@ -1,9 +1,18 @@
-import { SVGAttributes } from 'react'
+import { SvgIcon, SvgIconProps } from "@mui/material";
 
-export function FacebookIcon(props: SVGAttributes<SVGElement>) {
+export function FacebookIcon(props: SvgIconProps) {
   return (
-  <svg fill="none">
-    <path d="m13.083 15.55.725-4.778H9.27v-3.1c0-1.307.633-2.582 2.666-2.582H14V1.023S12.127.7 10.337.7c-3.74 0-6.182 2.289-6.182 6.43v3.642H0v4.777h4.155V27.1a16.3 16.3 0 0 0 2.557.201 16.3 16.3 0 0 0 2.557-.2V15.55h3.814Z" fill="#fff"/>
-  </svg>
-  )
+    <SvgIcon
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m17.214 13.328.622-4.095h-3.89V6.577c0-1.121.542-2.214 2.284-2.214H18V.877S16.395.6 14.86.6c-3.205 0-5.298 1.962-5.298 5.512v3.121H6v4.095h3.562v9.9a13.97 13.97 0 0 0 4.384 0v-9.9h3.268Z"
+        fill="#fff"
+      />
+    </SvgIcon>
+  );
 }

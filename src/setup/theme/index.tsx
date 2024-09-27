@@ -7,17 +7,15 @@ export const theme = createTheme({
   spacing: 4, //theme.spacing(2); // `${4 * 2}px` = '8px'
   breakpoints: {
     values: {
-      //به بالا
       xs: 0,
-      mobileS: 320,
-      mobileM: 375,
-      mobileL: 485,
-      sm: 576,
+      mobileS: 345,
+      sm: 425,
+      tabletS: 500,
       tabletM: 667,
-      tabletL: 768,
-      md: 884,
-      lg: 1200,
-      xl: 1440,
+      tablet: 768,
+      md: 940,
+      laptop: 1025,
+      xl: 1200,
     },
   },
   components: {
@@ -29,8 +27,9 @@ export const theme = createTheme({
           fontStyle: "normal",
           lineHeight: "180%",
           textTransform: "lowercase",
-          gap: "10px",
-          borderRadius: "8px",
+          gap: "8px",
+          borderRadius: "12px",
+          textWrap: "nowrap",
         },
       },
       variants: [
@@ -49,8 +48,15 @@ export const theme = createTheme({
             size: "medium",
           },
           style: {
-            fontSize: "0.875rem",
-            padding: "8px 24px",
+            height: "48px",
+            fontSize: "1rem",
+            padding: "0 16px",
+            "@media (max-width: 940px)": {
+              fontSize: "0.76rem",
+              padding: "0 12px",
+              gap: "4px",
+              borderRadius: "8px",
+            },
           },
         },
         {
@@ -89,6 +95,10 @@ export const theme = createTheme({
       fontSize: "1.25rem", //20
       lineHeight: "140%",
       fontWeight: "700",
+      "@media (max-width: 667px)": {
+        fontSize: "1rem", //14
+        lineHeight: "180%",
+      },
     },
     h6: {
       fontSize: "1.125rem", //18
@@ -131,15 +141,15 @@ export const theme = createTheme({
 });
 declare module "@mui/material/styles" {
   interface BreakpointOverrides {
+    lg: false;
     xs: true;
     mobileS: true;
-    mobileM: true;
-    mobileL: true;
     sm: true;
+    tabletS: true;
     tabletM: true;
-    tabletL: true;
+    tablet: true;
     md: true;
-    lg: true;
+    laptop: true;
     xl: true;
   }
 }
