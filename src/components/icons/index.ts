@@ -15,3 +15,5 @@ export { TwitterIcon } from "./twitter_icon";
 export { StarIcon } from "./star_icon";
 export { HomeIcon } from "./home-icon";
 export { EmailIcon } from "./email-icon";
+export { VectorIcon } from "./vector-icon";
+export { DiamondIcon } from "./diamond-icon";

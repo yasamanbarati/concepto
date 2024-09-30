@@ -46,3 +46,13 @@ export interface RecentEventsProps {
   location: string;
   imageUrl: string;
 }
+export interface AboutUsServicesProps {
+  title: string;
+  description: string;
+}
+export interface OurTeamProps {
+  name: string;
+  position: string;
+  description: string;
+  image: string;
+}
