@@ -71,26 +71,7 @@ export const theme = createTheme({
       ],
     },
   },
-  typography: {
-    h1: {
-      fontSize: "2.75rem", //44
-      lineHeight: "140%",
-    },
-    h2: {
-      fontSize: "2.5rem", //40
-      lineHeight: "140%",
-      fontWeight: "700",
-    },
-    h3: {
-      fontSize: "2rem", //32
-      lineHeight: "140%",
-      fontWeight: "700",
-    },
-    h4: {
-      fontSize: "1.5rem", //24
-      lineHeight: "140%",
-      fontWeight: "700",
-    },
+  typography: {        
     h5: {
       fontSize: "1.25rem", //20
       lineHeight: "140%",
@@ -115,27 +96,6 @@ export const theme = createTheme({
       // overflow:'hidden',
       // textOverflow:'ellipsis',
       // textAlign:'start',
-    },
-    body2: {
-      fontSize: "0.875rem", //14
-      lineHeight: "180%",
-      fontWeight: "500",
-      // display: '-webkit-box',
-      // WebkitLineClamp:'3',
-      // WebkitBoxOrient:'vertical',
-      // overflow:'hidden',
-      // textOverflow:'ellipsis',
-      // textAlign:'center',
-    },
-    subtitle1: {
-      fontSize: "0.75rem", //12
-      lineHeight: "180%",
-      fontWeight: "400",
-    },
-    subtitle2: {
-      fontSize: "0.625rem", //10
-      lineHeight: "180%",
-      fontWeight: "400",
     },
   },
 });
