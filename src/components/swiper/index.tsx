@@ -1,20 +1,37 @@
 "use client";
 import { Swiper } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import { styled } from "@mui/material";
 
+interface CoverflowEffect {
+  rotate: number;
+  stretch: number;
+  depth: number;
+  modifier: number;
+  slideShadows: boolean;
+}
+
+interface SwiperProps {
+  effect: string;
+  grabCursor: boolean;
+  centeredSlides: boolean;
+  slidesPerView: number | "auto" | undefined;
+  coverflowEffect: CoverflowEffect;
+}
+
 interface Props {
   children: React.ReactNode;
-  spaceBetween: number;
-  breakpoints: any;
+  spaceBetween?: number;
+  breakpoints?: any;
   navigationFlag: boolean;
+  props?: SwiperProps; // Fixed here
 }
 
 const SwiperSlide = styled(Swiper)(({ theme }) => ({
-  width: "-webkit-fill-available",
+  width: "100%", // Use "100%" instead of "-webkit-fill-available"
   marginBottom: "160px",
   [theme.breakpoints.down("md")]: {
     marginBottom: "96px",
@@ -43,15 +60,17 @@ const SwiperSection = ({
   spaceBetween,
   breakpoints,
   navigationFlag,
+  props,
 }: Props) => {
   return (
     <SwiperSlide
       spaceBetween={spaceBetween}
       navigation={navigationFlag}
       loop={true}
-      modules={[Navigation]}
+      modules={[Navigation, EffectCoverflow]}
       breakpoints={breakpoints}
       className="swiper-section"
+      {...(props || {})}
     >
       {children}
     </SwiperSlide>
