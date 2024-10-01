@@ -39,10 +39,3 @@ tools
     - react-query
     
     - mock
-
-    
- Images
- 
-![home-page (3)](https://github.com/user-attachments/assets/12983e00-0c19-48d2-ad21-f49d522be116)
-![home-page (2)](https://github.com/user-attachments/assets/b4fa2bfc-c203-4327-8fd7-9b3e2027d45b)
-![home-page (1)](https://github.com/user-attachments/assets/afa5558a-3d97-486b-9feb-0a2ace6c3994)
