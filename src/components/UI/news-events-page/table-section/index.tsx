@@ -11,6 +11,15 @@ const TableRowCard = styled("div")(({ theme }) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "flex-start",
+    "& h5": {
+      display: "-webkit-box",
+      WebkitLineClamp: "1",
+      WebkitBoxOrient: "vertical",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      textAlign: "start",
+      paddingLeft: "8px",
+    },
     "& span": {
       fontSize: "0.75rem",
       lineHeight: "25.2px",

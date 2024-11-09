@@ -25,6 +25,10 @@ const SocialIconsBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     gap: "24px",
     marginBottom: "32px",
+    "& svg ": {
+      width: "20px!important",
+      height: "20px!important",
+    },
   },
 }));
 export const FooterContentConnectionsSocialIcons = () => {

@@ -30,8 +30,12 @@ const PaperForm = styled(Paper)(({ theme }) => ({
     [theme.breakpoints.down("md")]: {
       width: "30%",
       height: "32px",
-      fontSize: "0.875rem", 
+      fontSize: "0.75rem",
       borderRadius: "8px!important",
+      "& svg": {
+        width: "18px!important",
+        height: "18px!important",
+      },
     },
     "& span, svg": {
       marginLeft: 0,
@@ -42,7 +46,7 @@ const PaperForm = styled(Paper)(({ theme }) => ({
   },
 }));
 
-const InputBase = styled(Input)(() => ({
+const InputBase = styled(Input)(({ theme }) => ({
   width: "100%",
   height: "40px",
   padding: "12px",
@@ -51,6 +55,9 @@ const InputBase = styled(Input)(() => ({
   fontWeight: "500",
   "&::before": {
     borderBottom: "none",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "0.86rem",
   },
 }));
 
