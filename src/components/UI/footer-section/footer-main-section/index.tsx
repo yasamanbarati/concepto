@@ -70,6 +70,16 @@ const FooterContent = styled(Grid2)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: "100%",
     marginTop: "32px",
+    "& div h3": {
+      fontSize: "1rem",
+    },
+    "& div span": {
+      fontSize: "0.75rem",
+    },
+    "& div svg": {
+      width: "20px!important",
+      height: "20px!important",
+    },
   },
 }));
 
@@ -85,7 +95,7 @@ const FooterMainSection = () => {
         >
           {FooterLinks.map((item, index) => {
             return (
-              <LinkGrid size={{ md: 4 }}>
+              <LinkGrid size={{ md: 4 }} mt={{ xs: 4, md: 0 }}>
                 <h3>{item.title}</h3>
                 {item.links.map((item, index) => {
                   return <Link href={item.path}>{item.name}</Link>;
@@ -119,7 +129,8 @@ const FooterMainSection = () => {
             </h3>
             <h3>
               <PhoneIcon />
-              شماره تماس: 09123456789
+              شماره تماس:
+              <span> 09123456789</span>
             </h3>
           </div>
           <div>

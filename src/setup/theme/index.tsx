@@ -52,10 +52,10 @@ export const theme = createTheme({
             fontSize: "1rem",
             padding: "0 16px",
             "@media (max-width: 940px)": {
-              fontSize: "0.76rem",
-              padding: "0 12px",
-              gap: "4px",
-              borderRadius: "8px",
+              fontSize: "0.76rem!important",
+              padding: "0 12px!important",
+              gap: "4px!important",
+              borderRadius: "8px!important",
             },
           },
         },
@@ -71,13 +71,13 @@ export const theme = createTheme({
       ],
     },
   },
-  typography: {        
+  typography: {
     h5: {
       fontSize: "1.25rem", //20
       lineHeight: "140%",
       fontWeight: "700",
       "@media (max-width: 667px)": {
-        fontSize: "1rem", 
+        fontSize: "1rem",
         lineHeight: "180%",
       },
     },
@@ -90,6 +90,11 @@ export const theme = createTheme({
       fontSize: "1rem", //16
       lineHeight: "180%",
       fontWeight: "500",
+      "@media (max-width: 667px)": {
+        fontSize: "0.86rem",
+        lineHeight: "180%",
+        whiteSpace: "nowrap",
+      },
       // display: '-webkit-box',
       // WebkitLineClamp:'1',
       // WebkitBoxOrient:'vertical',

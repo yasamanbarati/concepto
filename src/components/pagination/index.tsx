@@ -1,4 +1,5 @@
 import { Pagination, styled } from "@mui/material";
+import { esES } from "@mui/material/locale";
 
 interface PaginationComponentProps {
   count: number;
@@ -13,6 +14,7 @@ const PaginationContent = styled(Pagination)(({ theme }) => ({
   width: "",
   height: "48px",
   "& ul": {
+    direction: "ltr",
     padding: "0px 8px 0px 8px",
     backgroundColor: theme.palette.white,
     borderRadius: "12px",

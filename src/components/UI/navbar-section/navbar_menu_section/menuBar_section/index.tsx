@@ -22,7 +22,7 @@ const DrawerStyle = {
   "& .MuiDrawer-paper": {
     width: "250px",
     height: "calc( 100vh - 65px )",
-    right: "0",
+    right: "-40px",
     top: "-20px",
     paddingRight: '12px',
     background: "rgba(255, 255, 255, 0.7)",

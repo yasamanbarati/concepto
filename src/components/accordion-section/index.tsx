@@ -44,6 +44,9 @@ const AccordionMain = styled("div")(({ theme }) => ({
     left: "-50%",
     padding: "24px 108px 24px 108px",
     borderRadius: "0 0 75% 35%",
+    [theme.breakpoints.down("tabletM")]: {
+      top: "40px",
+    },
   },
 }));
 
@@ -125,9 +128,6 @@ const AccordionSection = () => {
                 background:
                   item.id === activeIndex ? "#E9EAEE78" : "transparent",
                 borderRadius: "12px 12px 0 0",
-                border:
-                  item.id === activeIndex ? "1px solid #CBCED7" : "transparent",
-                borderBottom: 0,
               }}
             >
               {item.title}
