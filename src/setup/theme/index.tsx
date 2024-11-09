@@ -77,7 +77,7 @@ export const theme = createTheme({
       lineHeight: "140%",
       fontWeight: "700",
       "@media (max-width: 667px)": {
-        fontSize: "1rem", //14
+        fontSize: "1rem", 
         lineHeight: "180%",
       },
     },
