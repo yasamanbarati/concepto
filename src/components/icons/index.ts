@@ -17,3 +17,5 @@ export { HomeIcon } from "./home-icon";
 export { EmailIcon } from "./email-icon";
 export { VectorIcon } from "./vector-icon";
 export { DiamondIcon } from "./diamond-icon";
+export { HeartIcon } from "./heart_icon";
+export { ShearIcon } from "./shear_icon";
