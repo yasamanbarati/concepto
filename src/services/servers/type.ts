@@ -1,3 +1,5 @@
+import { GridSize } from "@mui/material";
+
 export interface navbarLinksProps {
   id: string;
   name: string;
@@ -55,4 +57,12 @@ export interface OurTeamProps {
   position: string;
   description: string;
   image: string;
+}
+export interface ImportantNewsProps {
+  id: number;
+  title?: string;
+  description?: string;
+  image?: string;
+  size?: { xs?: number; tablet?: number; md?: number } | number | undefined;  
+  timestamp?: string;
 }
