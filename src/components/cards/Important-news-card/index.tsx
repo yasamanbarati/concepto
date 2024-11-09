@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Grid2, styled } from "@mui/material";
 
 import { ImportantNewsProps } from "@/services/servers/type";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 const CardBox = styled(Grid2)(({ theme }) => ({
   position: "relative",
@@ -26,7 +27,7 @@ const ImportantNewsCard = ({
 }: ImportantNewsProps) => {
   return (
     <CardBox size={size}>
-      <Image alt="news" src={image} fill />
+      <Image alt="news" src={image as string | StaticImport} fill />
       <p>{description}</p>
     </CardBox>
   );
