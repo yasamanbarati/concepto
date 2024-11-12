@@ -48,6 +48,7 @@ const LocationDiv = styled("div")(({ theme }) => ({
           fontSize: "0.875rem!important",
         },
         "& span": {
+          whiteSpace: "wrap",
           fontSize: "0.75rem",
         },
       },
@@ -96,6 +97,7 @@ const LocationDiv = styled("div")(({ theme }) => ({
       "& button": {
         padding: "12px",
         "& span": {
+          whiteSpace: "wrap",
           marginRight: 0,
           "& svg": {
             width: "20px!important",
