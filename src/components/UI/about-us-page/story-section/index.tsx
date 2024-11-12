@@ -40,6 +40,7 @@ const ContentBox = styled("div")(({ theme }) => ({
       "& p": {
         fontSize: "1rem",
         fontWeight: "400",
+        whiteSpace: "wrap",
         [theme.breakpoints.down("tabletM")]: {
           fontSize: "0.875rem",
         },
