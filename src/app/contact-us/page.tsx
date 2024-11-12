@@ -113,51 +113,52 @@ const LocationDiv = styled("div")(({ theme }) => ({
   },
 }));
 
-const FormPaper = styled("div")(({ theme }) => {
-  return {
-    border: `1px solid ${theme.palette.neutral.light}`,
-    padding: "32px",
-    borderRadius: "16px",
-    marginTop: "24px",
+const FormPaper = styled("div")(({ theme }) => ({
+  border: `1px solid ${theme.palette.neutral.light}`,
+  padding: "32px",
+  borderRadius: "16px",
+  marginTop: "24px",
+  "& .MuiFormControl-root": {
+    marginBottom: "24px",
+    "&:last-child": {
+      marginBottom: 0,
+    },
+    "& .Mui-focused": {
+      color: theme.palette.primary.main,
+    },
+    "& label": {
+      right: "30px",
+    },
+    "& .MuiInputBase-root": {
+      height: "48px",
+      borderRadius: "12px",
+      "& input:focus": {
+        color: theme.palette.primary.main + "!important",
+      },
+      "& fieldset": {
+        textAlign: "right",
+      },
+    },
+    "& label[data-shrink='true']": {
+      right: "-80px", // تغییر مقدار right
+    },
+  },
+
+  "& #text-massage": {
     "& .MuiFormControl-root": {
-      marginBottom: "24px",
-      "&:last-child": {
-        marginBottom: 0,
-      },
-      "& .Mui-focused": {
-        color: theme.palette.primary.main,
-      },
-      "& label": {
-        right: "30px",
+      height: "100%",
+      [theme.breakpoints.down("md")]: {
+        height: "296px",
       },
       "& .MuiInputBase-root": {
-        height: "48px",
-        borderRadius: "12px",
-        "& input:focus": {
-          color: theme.palette.primary.main + "!important",
-        },
-        "& fieldset": {
-          textAlign: "right",
-        },
+        height: "100%",
       },
       "& label[data-shrink='true']": {
-        right: "-80px", // تغییر مقدار right
+        right: "-175px", // تغییر مقدار right
       },
     },
-
-    "& #text-massage": {
-      "& .MuiFormControl-root": {
-        height: "100%",
-        "& .MuiInputBase-root": {
-          height: "100%",
-        },
-        "& label[data-shrink='true']": {
-          right: "-175px", // تغییر مقدار right
-        },
-      },
-    },
-  };
-});
+  },
+}));
 
 const Page = () => {
   return (
@@ -204,7 +205,11 @@ const Page = () => {
           فرم تماس با ما
         </Typography>
         <Grid2 container spacing={8}>
-          <Grid2 size={{ md: 4 }}>
+          <Grid2
+            size={{ xs: 12, md: 4 }}
+            display={"flex"}
+            flexDirection={"column"}
+          >
             <TextField
               label="نام و نام خانوادگی"
               variant="outlined"
@@ -213,7 +218,7 @@ const Page = () => {
             <TextField label="شماره تماس" variant="outlined" fullWidth />
             <TextField label="آدرس ایمیل" variant="outlined" fullWidth />
           </Grid2>
-          <Grid2 size={{ md: 7 }} id="text-massage">
+          <Grid2 size={{ xs: 12, md: 7 }} id="text-massage">
             <TextField label="متن پیام" variant="outlined" fullWidth />
           </Grid2>
         </Grid2>

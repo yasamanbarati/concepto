@@ -137,6 +137,7 @@ const AboutUsServicesCard = styled(Grid2)(({ theme }) => ({
     fontWeight: "400",
     lineHeight: "140%",
     color: theme.palette.black.dark,
+    whiteSpace: "wrap",
   },
   [theme.breakpoints.down("sm")]: {
     minHeight: "255px",
@@ -161,7 +162,12 @@ const CoverSection = () => {
           text="مشاهده بیشتر"
         />
       </CoverContent>
-      <Grid2 container spacing={4} mt={{ xs: 8, tabletM: 15, md: 27 }}>
+      <Grid2
+        container
+        spacing={4}
+        mt={{ xs: 8, tabletM: 15, md: 27 }}
+        width={"100%"}
+      >
         {AboutUsServices.map((item, index) => {
           return (
             <AboutUsServicesCard size={{ xs: 12, tabletM: 6, md: 4 }}>
